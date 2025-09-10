@@ -1,0 +1,18 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "encbench/pb;pb";
+
+message Record {
+  int32  id   = 1;
+  double x    = 2;
+  double y    = 3;
+  double v1   = 4;
+  double v2   = 5;
+  double v3   = 6;
+  string name = 7;
+}
+
+message Data {
+  repeated Record records = 1;
+}
